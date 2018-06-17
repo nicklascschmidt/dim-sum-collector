@@ -1,0 +1,118 @@
+
+
+
+body {
+    background-image: url("../images/dim-sum-background.jpg");
+    stop-opacity: .5;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#parent::after {
+	content: ''; 
+	width: 100%; 
+	height: 105%;
+	background-color: #ffc0cb; 
+	opacity: 0.4; 
+	position: absolute; 
+	top: 0; 
+	left: 0;
+    z-index: -1;
+}
+
+
+
+.box {
+    border: 1px solid black;
+    border-radius: 1rem;
+    background: rgb(180, 45, 45);
+    padding: .5rem;
+    color: white;
+    overflow: hidden;
+}
+
+.center {
+    align-content: center;
+}
+
+.hoverOverImage:hover {
+    border: 3px solid red;
+}
+
+.height-margin {
+    margin: .5rem 0;
+    height: 160px;
+}
+
+
+.resize-image {
+    height: 200px;
+}
+
+
+
+
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    #parent::after {
+        height: 110%;
+    }
+    .height-margin {
+        height: 160px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #parent::after {
+        height: 118%;
+    }
+    .resize-image {
+        height: 180px;
+    }
+    .height-margin {
+        height: 120px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #parent::after {
+        height: 122%;
+    }
+    .resize-image {
+        height: 140px;
+    }
+    .height-margin {
+        height: 80px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #parent::after {
+        height: 128%;
+    }
+    .resize-image {
+        height: 200px;
+    }
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    #parent::after {
+        height: 133%;
+    }
+}
+
+
+
+
