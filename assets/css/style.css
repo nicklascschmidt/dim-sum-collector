@@ -29,7 +29,7 @@ body {
     border: 1px solid black;
     border-radius: 1rem;
     background: rgb(180, 45, 45);
-    padding: .5rem;
+    padding: 10px;
     color: white;
     overflow: hidden;
 }
